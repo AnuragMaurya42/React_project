@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Card from './card';
+import Container from './container'; // Import Container component
+// import cardsData from './item'; // Import cards data
+// import Button from './botton';
+import'bootstrap/dist/css/bootstrap.min.css'
+// import Container1 from './container1';
 
 function App() {
   return (
+    <>
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    
+        <div className="card-list">
+           <Container>
+            <Card></Card>
+           </Container>        
+        </div>
       </header>
     </div>
+    </>
   );
 }
 
